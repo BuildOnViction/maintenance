@@ -14,7 +14,6 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding: 100px 0;
 }
 
 /* -----------------------------------------------------------
@@ -25,6 +24,19 @@ body {
   padding: 30px 15px;
   position: absolute;
   top: 0;
+}
+@media only screen and (min-width: 1025px) {
+  #header {
+    padding: 100px 15px 0;
+  }
+}
+@media print {
+  #header {
+    padding: 100px 15px 0;
+  }
+}
+.ie8 #header {
+  padding: 100px 15px 0;
 }
 #header img {
   height: 50px;
@@ -60,6 +72,19 @@ body {
 }
 #contents .container > div.main_img {
   padding: 5%;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  #contents .container > div.main_img img {
+    max-width: 400px;
+  }
+}
+@media print {
+  #contents .container > div.main_img img {
+    max-width: 400px;
+  }
+}
+.ie8 #contents .container > div.main_img img {
+  max-width: 400px;
 }
 @media only screen and (max-width: 1024px) {
   #contents .container > div.main_img {
@@ -102,6 +127,19 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media only screen and (min-width: 1025px) {
+  .social-links {
+    padding: 0 0 50px;
+  }
+}
+@media print {
+  .social-links {
+    padding: 0 0 50px;
+  }
+}
+.ie8 .social-links {
+  padding: 0 0 50px;
 }
 .social-links .social-links__link {
   transition: all .5s ease;
@@ -151,12 +189,20 @@ body {
 }
 .tomochain-social .social-links .social-links__link {
   position: relative;
-  display: inline-block;
-  height: 34px;
-  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1px;
+}
+@media only screen and (max-width: 767px) {
+  .tomochain-social .social-links .social-links__link {
+    height: 34px;
+    width: 34px;
+  }
 }
 .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after {
   content: '';
@@ -184,7 +230,6 @@ body {
   display: block;
   position: relative;
   font-size: 17px;
-  line-height: 34px;
   z-index: 1;
   color: #fff;
   transition: all .5s ease;
