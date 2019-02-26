@@ -12,4 +12,6 @@ services:
       - 3003:3003
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./src:/usr/share/nginx/html:rw
+      - ./mime.types:/etc/nginx/mime.types
     restart: always
