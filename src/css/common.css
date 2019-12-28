@@ -6,7 +6,7 @@ CSS information
  style info : maintain
 =================================================================== */
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 @media only screen and (max-width: 1024px) {
@@ -76,7 +76,7 @@ html.ie8 .view_sp {
   display: none !important;
 }
 html.ie8 #page {
-  min-width: 1200px !important;
+  min-width: 1100px !important;
   margin: auto;
   font-size: 100% !important;
 }
@@ -161,20 +161,6 @@ clearfix
 /* ----------
 container
 ---------- */
-@media only screen and (min-width: 1025px) and (max-width: 1319px) {
-  .container {
-    max-width: 95%;
-  }
-}
-@media print {
-  .container {
-    max-width: 95%;
-  }
-}
-.ie8 .container {
-  max-width: 95%;
-}
-
 /* ----------
 Title
 ---------- */
